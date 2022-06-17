@@ -11,6 +11,13 @@ const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI is higher than John`);
+} else {
+    console.log(`John's BMI is higher than Marks`);
+}
+
+
 
 const firstName = 'Jonas';
 const job = 'teacher';
