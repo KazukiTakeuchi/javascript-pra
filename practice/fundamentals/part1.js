@@ -55,3 +55,12 @@ switch (day) {
     default:
         console.log('Not avalida day!');
 }
+
+// The Conditional (Ternary) Operator　三項演算子
+const age = 23;
+age >= 18 ? console.log(`I like to drink bear`) : console.log(`I can't dring bear`);
+
+const drink = age >= 19 ? 'bear' : 'water';
+console.log(drink);
+
+
