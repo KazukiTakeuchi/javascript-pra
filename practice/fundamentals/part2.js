@@ -52,10 +52,10 @@ const age3 = calcAge3(1991);
 console.log(age3);
 
 const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2022 - birthYear;
-  const retirement = 65 - age;
-  // return retirement;
-  return `your age is ${age}. ${firstName} retires in ${retirement} years`;
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `your age is ${age}. ${firstName} retires in ${retirement} years`;
 }
 
 console.log(yearsUntilRetirement(1998, 'Kazuki'));
@@ -164,7 +164,7 @@ console.log(jonas);
 console.log(jonas.length);
 
 const calcAge4 = function (birthYeah) {
-  return 2022 - birthYeah;
+    return 2022 - birthYeah;
 }
 const years = [1990, 1967, 2002, 2010, 2018];
 
@@ -237,11 +237,11 @@ console.log(bills, tips, totals);
 
 // Dot vs. Bracket Notation
 const jonas_info = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
 };
 console.log(jonas_info);
 
@@ -289,23 +289,23 @@ console.log(jon.getSummary())
 
 
 const jo = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
 ];
 const types = [];
 
 
 for (let i = 0; i < jonas.length; i++) {
-  // Reading from jonas array
-  console.log(jonas[i], typeof jonas[i]);
+    // Reading from jonas array
+    console.log(jonas[i], typeof jonas[i]);
 
-  // Filling types array
-  // types[i] = typeof jonas[i];
-  types.push(typeof jonas[i]);
+    // Filling types array
+    // types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
 }
 
 console.log(types);
@@ -314,67 +314,67 @@ const years_recent = [1991, 2007, 1969, 2020];
 const ages_recent = [];
 
 for (let i = 0; i < years.length; i++) {
-  ages.push(2037 - years[i]);
+    ages.push(2037 - years[i]);
 }
 console.log(ages);
 
 // continue and break
 console.log('--- ONLY STRINGS ---')
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== 'string') continue;
+    if (typeof jonas[i] !== 'string') continue;
 
-  console.log(jonas[i], typeof jonas[i]);
+    console.log(jonas[i], typeof jonas[i]);
 }
 
 console.log('--- BREAK WITH NUMBER ---')
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === 'number') break;
+    if (typeof jonas[i] === 'number') break;
 
-  console.log(jonas[i], typeof jonas[i]);
+    console.log(jonas[i], typeof jonas[i]);
 }
 
 
 const jonass = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
 ];
 
 // 0, 1, ..., 4
 // 4, 3, ..., 0
 
 for (let i = jonass.length - 1; i >= 0; i--) {
-  console.log(i, jonass[i]);
+    console.log(i, jonass[i]);
 }
 
 for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`-------- Starting exercise ${exercise}`);
+    console.log(`-------- Starting exercise ${exercise}`);
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
-  }
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
+    }
 }
 
 
 
 // The while Loop
 for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
 
 let rep = 1;
 while (rep <= 10) {
-  // console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
-  rep++;
+    // console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
+    rep++;
 }
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
 while (dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log('Loop is about to end...');
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
 }
