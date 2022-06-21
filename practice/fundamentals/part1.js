@@ -62,5 +62,3 @@ age >= 18 ? console.log(`I like to drink bear`) : console.log(`I can't dring bea
 
 const drink = age >= 19 ? 'bear' : 'water';
 console.log(drink);
-
-
