@@ -4,7 +4,7 @@ const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 10;
 document.querySelector('.number').textContent = secretNumber;
 
-document.querySelector('.check').addEventListener('click', function () {
+document.querySelector('.check').addEventListener('click', ()=> {
     const guess = Number(document.querySelector('.guess').value);
     console.log(guess);
 
@@ -29,3 +29,4 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = `You lost the game`
     }
 });
+
